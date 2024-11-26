@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center the main heading and input controls */
+        body > h1,
+        body > input,
+        body > button {
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #weatherDisplayContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #weatherDisplay {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .forecast-day {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .forecast-day p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="getWeatherBtn">Get Weather</button>
+
+    <!-- Weather Display Container -->
+    <div id="weatherDisplayContainer">
+        <div id="weatherDisplay"></div>
+    </div>
+
+    <!-- Include your JavaScript file or script here -->
+    <script src="Weather.js"></script>
+</body>
+</html>
+
